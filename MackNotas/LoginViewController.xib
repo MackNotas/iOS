@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Bitter-Bold.otf">
+            <string>Bitter-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="btnBrasilia" destination="baM-GA-rqR" id="TOQ-bl-qcr"/>
+                <outlet property="btnCampinas" destination="mlc-aa-5XJ" id="bsy-b9-TdK"/>
+                <outlet property="btnLogin" destination="0HN-lv-sAz" id="uMv-Ro-4Yk"/>
+                <outlet property="btnMenuControl" destination="DZt-Mu-0jG" id="8N3-KF-H8X"/>
+                <outlet property="btnSaoPaulo" destination="Hzz-19-Vof" id="h1E-XM-K70"/>
+                <outlet property="btnTambore" destination="kaz-cR-B7n" id="Cdn-Ri-2Q4"/>
+                <outlet property="cstnLogoHeight" destination="FL9-DA-4xu" id="zjY-FA-JSh"/>
+                <outlet property="cstnLogoPosition" destination="5pS-Y1-c7t" id="6fj-be-05s"/>
+                <outlet property="cstrBrasiliaY" destination="IYh-RH-SGx" id="YUd-1I-yq2"/>
+                <outlet property="cstrCampinasY" destination="bRg-IW-tQ4" id="xsd-po-69G"/>
+                <outlet property="cstrSaoPauloY" destination="4Pz-Mg-CWY" id="iCp-uL-ybL"/>
+                <outlet property="cstrTamboreY" destination="0lN-8d-PWq" id="0cB-BT-Jfz"/>
+                <outlet property="lblIncorrect" destination="FXq-90-B3O" id="gDE-DW-lQI"/>
+                <outlet property="lblLogoMack" destination="tch-sp-tRM" id="KlK-Rw-ITI"/>
+                <outlet property="txtFieldSenha" destination="2oW-3C-5xI" id="CNo-UY-VTi"/>
+                <outlet property="txtFieldTia" destination="iPf-Ib-6Vs" id="qBx-Rq-rz8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewMenuBackground" destination="yNh-Ii-FSP" id="SaH-cn-NGY"/>
+                <outlet property="viewTxtContainer" destination="hb6-J9-S1T" id="YZd-o8-dMJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0HN-lv-sAz" userLabel="btnLogin">
+                    <rect key="frame" x="37" y="268" width="247" height="44"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="U4H-dx-6rv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" title="Entrar">
+                        <color key="titleColor" red="0.80362283294372139" green="0.80362283294372139" blue="0.80362283294372139" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnLoginClick:" destination="-1" eventType="touchUpInside" id="wJZ-yu-xDw"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb6-J9-S1T" userLabel="viewTxtContainer">
+                    <rect key="frame" x="37" y="164" width="247" height="96"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="TIA" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="iPf-Ib-6Vs" userLabel="txtFieldTia">
+                            <rect key="frame" x="20" y="0.0" width="207" height="44"/>
+                            <color key="backgroundColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="gKJ-GR-bXB"/>
+                            </connections>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Senha" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2oW-3C-5xI" userLabel="txtFieldSenha">
+                            <rect key="frame" x="20" y="52" width="207" height="44"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="cNh-l0-HDf"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yB2-D3-5Sh" userLabel="viewSeparator">
+                            <rect key="frame" x="0.0" y="47" width="247" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.089999999999999997" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="yB2-D3-5Sh" firstAttribute="top" secondItem="iPf-Ib-6Vs" secondAttribute="bottom" constant="3" id="Agw-73-n7H"/>
+                        <constraint firstItem="iPf-Ib-6Vs" firstAttribute="leading" secondItem="hb6-J9-S1T" secondAttribute="leading" constant="20" id="E2k-U3-YoY"/>
+                        <constraint firstAttribute="trailing" secondItem="2oW-3C-5xI" secondAttribute="trailing" constant="20" id="Emj-bX-bpV"/>
+                        <constraint firstAttribute="trailing" secondItem="yB2-D3-5Sh" secondAttribute="trailing" id="GMW-y5-2UH"/>
+                        <constraint firstItem="2oW-3C-5xI" firstAttribute="bottom" secondItem="iPf-Ib-6Vs" secondAttribute="bottom" constant="52" id="MtC-0D-mQd"/>
+                        <constraint firstItem="yB2-D3-5Sh" firstAttribute="top" secondItem="iPf-Ib-6Vs" secondAttribute="top" constant="47" id="Sv3-WW-cfg"/>
+                        <constraint firstItem="yB2-D3-5Sh" firstAttribute="leading" secondItem="hb6-J9-S1T" secondAttribute="leading" id="UjF-zJ-ZfW"/>
+                        <constraint firstAttribute="height" constant="96" id="Xk7-bJ-2rk"/>
+                        <constraint firstItem="yB2-D3-5Sh" firstAttribute="centerX" secondItem="iPf-Ib-6Vs" secondAttribute="centerX" id="fiO-AX-qcp"/>
+                        <constraint firstItem="2oW-3C-5xI" firstAttribute="top" secondItem="yB2-D3-5Sh" secondAttribute="bottom" constant="4" id="gne-01-EpD"/>
+                        <constraint firstItem="yB2-D3-5Sh" firstAttribute="centerX" secondItem="2oW-3C-5xI" secondAttribute="centerX" id="lhX-1w-Xuk"/>
+                        <constraint firstAttribute="bottom" secondItem="yB2-D3-5Sh" secondAttribute="bottom" constant="48" id="lpj-zq-0l7"/>
+                        <constraint firstAttribute="trailing" secondItem="iPf-Ib-6Vs" secondAttribute="trailing" constant="20" id="pjb-mZ-2Yr"/>
+                        <constraint firstItem="2oW-3C-5xI" firstAttribute="leading" secondItem="hb6-J9-S1T" secondAttribute="leading" constant="20" id="wCo-cT-lRE"/>
+                        <constraint firstItem="yB2-D3-5Sh" firstAttribute="top" secondItem="hb6-J9-S1T" secondAttribute="top" constant="47" id="yYl-E4-uzJ"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tch-sp-tRM" userLabel="logoMack">
+                    <rect key="frame" x="0.0" y="-11" width="320" height="167"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="167" id="FL9-DA-4xu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Bitter-Bold" family="Bitter" pointSize="226"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <size key="shadowOffset" width="14" height="-1"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIA, senha ou unidade incorreto!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FXq-90-B3O" userLabel="lblIncorrect">
+                    <rect key="frame" x="0.0" y="320" width="320" height="17.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baM-GA-rqR" userLabel="btnBrasilia">
+                    <rect key="frame" x="87" y="345" width="146" height="25"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="pvP-bG-aZj"/>
+                        <constraint firstAttribute="height" constant="25" id="xfn-Ky-3AA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" title="Brasília">
+                        <color key="titleColor" red="0.80362283290000003" green="0.80362283290000003" blue="0.80362283290000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBrasiliaClick:" destination="-1" eventType="touchUpInside" id="h4i-Jg-tc9"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlc-aa-5XJ" userLabel="btnCampinas">
+                    <rect key="frame" x="87" y="345" width="146" height="25"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="PGN-jT-BMZ"/>
+                        <constraint firstAttribute="height" constant="25" id="loF-va-MDR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" title="Campinas">
+                        <color key="titleColor" red="0.80362283290000003" green="0.80362283290000003" blue="0.80362283290000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCampinasClick:" destination="-1" eventType="touchUpInside" id="R6v-l5-A2O"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaz-cR-B7n" userLabel="btnTambore">
+                    <rect key="frame" x="87" y="345" width="146" height="25"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Qm2-p9-aUR"/>
+                        <constraint firstAttribute="width" constant="146" id="ZxC-AU-6p2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" title="Tamboré">
+                        <color key="titleColor" red="0.80362283290000003" green="0.80362283290000003" blue="0.80362283290000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnTamboreClick:" destination="-1" eventType="touchUpInside" id="CcY-Aj-eYH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hzz-19-Vof" userLabel="btnSaoPaulo">
+                    <rect key="frame" x="87" y="345" width="146" height="25"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="eby-e0-pVf"/>
+                        <constraint firstAttribute="width" constant="146" id="lXE-X6-V58"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" title="São Paulo">
+                        <color key="titleColor" red="0.80362283290000003" green="0.80362283290000003" blue="0.80362283290000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnSaoPauloClick:" destination="-1" eventType="touchUpInside" id="RYX-LJ-Lct"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNh-Ii-FSP" userLabel="viewMenuBackground">
+                    <rect key="frame" x="87" y="345" width="146" height="25"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Agk-vr-7aJ"/>
+                        <constraint firstAttribute="width" constant="146" id="Mb8-8I-2d9"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZt-Mu-0jG" userLabel="btnMenuControl">
+                    <rect key="frame" x="87" y="345" width="146" height="25"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="146" id="aaU-J6-cIf"/>
+                        <constraint firstAttribute="height" constant="25" id="c20-wY-2LX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <inset key="contentEdgeInsets" minX="1" minY="0.0" maxX="1" maxY="0.0"/>
+                    <state key="normal" title="São Paulo">
+                        <color key="titleColor" red="0.80362283290000003" green="0.80362283290000003" blue="0.80362283290000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnMenuControlClick:" destination="-1" eventType="touchUpInside" id="oHW-ri-Ksq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="kaz-cR-B7n" secondAttribute="centerY" constant="-106" id="0lN-8d-PWq" userLabel="cstrTamboreY"/>
+                <constraint firstAttribute="centerY" secondItem="Hzz-19-Vof" secondAttribute="centerY" constant="-106" id="4Pz-Mg-CWY" userLabel="cstrSaoPauloY"/>
+                <constraint firstItem="0HN-lv-sAz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="5gB-2X-hCV"/>
+                <constraint firstItem="tch-sp-tRM" firstAttribute="top" secondItem="hb6-J9-S1T" secondAttribute="top" constant="-175" id="5pS-Y1-c7t"/>
+                <constraint firstItem="hb6-J9-S1T" firstAttribute="bottom" secondItem="0HN-lv-sAz" secondAttribute="bottom" constant="-52" id="7L5-MC-SMx"/>
+                <constraint firstAttribute="trailing" secondItem="hb6-J9-S1T" secondAttribute="trailing" constant="36" id="7iu-Hr-U2L"/>
+                <constraint firstAttribute="centerY" secondItem="DZt-Mu-0jG" secondAttribute="centerY" constant="-106" id="CMR-ue-j6N"/>
+                <constraint firstItem="hb6-J9-S1T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="37" id="DZ4-ni-7Zb"/>
+                <constraint firstAttribute="centerX" secondItem="yNh-Ii-FSP" secondAttribute="centerX" id="FTi-85-XwV"/>
+                <constraint firstAttribute="centerX" secondItem="kaz-cR-B7n" secondAttribute="centerX" id="FlG-GP-q67"/>
+                <constraint firstAttribute="centerX" secondItem="Hzz-19-Vof" secondAttribute="centerX" id="HFT-bO-1bw"/>
+                <constraint firstAttribute="centerY" secondItem="baM-GA-rqR" secondAttribute="centerY" constant="-106" id="IYh-RH-SGx"/>
+                <constraint firstAttribute="trailing" secondItem="FXq-90-B3O" secondAttribute="trailing" id="IqL-cc-RbA"/>
+                <constraint firstAttribute="centerY" secondItem="yNh-Ii-FSP" secondAttribute="centerY" constant="-106" id="M7B-Rt-H3M"/>
+                <constraint firstAttribute="centerX" secondItem="DZt-Mu-0jG" secondAttribute="centerX" id="OvS-Gc-3aI"/>
+                <constraint firstItem="Hzz-19-Vof" firstAttribute="top" secondItem="FXq-90-B3O" secondAttribute="bottom" constant="8" id="QUb-Nt-P2e"/>
+                <constraint firstAttribute="trailing" secondItem="tch-sp-tRM" secondAttribute="trailing" id="YXn-dM-Vti"/>
+                <constraint firstAttribute="centerY" secondItem="mlc-aa-5XJ" secondAttribute="centerY" constant="-106" id="bRg-IW-tQ4" userLabel="cstrCampinasY"/>
+                <constraint firstItem="FXq-90-B3O" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c6m-jp-t0l"/>
+                <constraint firstItem="tch-sp-tRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cf6-WZ-W1W"/>
+                <constraint firstAttribute="centerX" secondItem="hb6-J9-S1T" secondAttribute="centerX" constant="-0.5" id="e1a-HE-ZbX"/>
+                <constraint firstAttribute="trailing" secondItem="0HN-lv-sAz" secondAttribute="trailing" constant="36" id="fIw-DQ-h5y"/>
+                <constraint firstItem="FXq-90-B3O" firstAttribute="top" secondItem="0HN-lv-sAz" secondAttribute="bottom" constant="8" id="li7-8t-EXb"/>
+                <constraint firstAttribute="centerY" secondItem="hb6-J9-S1T" secondAttribute="centerY" constant="40" id="pWN-vA-hvS"/>
+                <constraint firstAttribute="centerX" secondItem="mlc-aa-5XJ" secondAttribute="centerX" id="url-aR-4uN"/>
+                <constraint firstAttribute="centerX" secondItem="baM-GA-rqR" secondAttribute="centerX" id="yi6-JO-BBy" userLabel="cstrBrasiliaY"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="NotaCell">
+            <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="106" height="30"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Partic" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1a-Ed-L4Q">
+                        <rect key="frame" x="8" y="4" width="45" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99.99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvI-8S-5EC" userLabel="lblValorA">
+                        <rect key="frame" x="60" y="4" width="45.5" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="b1a-Ed-L4Q" secondAttribute="bottom" constant="4" id="ITI-xe-x7v"/>
+                <constraint firstItem="GvI-8S-5EC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="KAU-2r-tmh"/>
+                <constraint firstAttribute="bottom" secondItem="GvI-8S-5EC" secondAttribute="bottom" constant="4" id="XP2-mk-pTv"/>
+                <constraint firstItem="b1a-Ed-L4Q" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="c8P-ot-yAA"/>
+                <constraint firstAttribute="trailing" secondItem="GvI-8S-5EC" secondAttribute="trailing" id="qRO-R2-xVb"/>
+                <constraint firstItem="b1a-Ed-L4Q" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="tqA-gl-3cM"/>
+            </constraints>
+            <size key="customSize" width="106" height="29"/>
+            <connections>
+                <outlet property="lblNota" destination="GvI-8S-5EC" id="3Ec-e5-UlH"/>
+                <outlet property="lblTipo" destination="b1a-Ed-L4Q" id="2nG-WI-NKK"/>
+            </connections>
+            <point key="canvasLocation" x="167" y="266.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

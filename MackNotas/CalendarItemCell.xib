@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CalendarItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AcJ-9q-dR5" userLabel="viewMain">
+                        <rect key="frame" x="77" y="0.0" width="235" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tecnologia de Sistemas Legados Cobolzera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PGf-nL-Wvr">
+                                <rect key="frame" x="8" y="6" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prova A" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEQ-rB-BG3">
+                                <rect key="frame" x="8" y="27" width="219" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="PGf-nL-Wvr" firstAttribute="top" secondItem="AcJ-9q-dR5" secondAttribute="top" constant="6" id="Bhk-b2-ziT"/>
+                            <constraint firstAttribute="bottom" secondItem="UEQ-rB-BG3" secondAttribute="bottom" constant="5.5" id="NXh-yc-YU9"/>
+                            <constraint firstAttribute="height" constant="53.5" id="RxQ-jc-qO6"/>
+                            <constraint firstItem="UEQ-rB-BG3" firstAttribute="top" secondItem="PGf-nL-Wvr" secondAttribute="bottom" id="Vo3-ic-X1p"/>
+                            <constraint firstAttribute="centerX" secondItem="PGf-nL-Wvr" secondAttribute="centerX" id="Wvt-iC-RHb"/>
+                            <constraint firstAttribute="trailing" secondItem="UEQ-rB-BG3" secondAttribute="trailing" constant="8" id="ewn-HX-y0A"/>
+                            <constraint firstItem="UEQ-rB-BG3" firstAttribute="leading" secondItem="AcJ-9q-dR5" secondAttribute="leading" constant="8" id="hCD-9f-QnL"/>
+                            <constraint firstItem="PGf-nL-Wvr" firstAttribute="leading" secondItem="AcJ-9q-dR5" secondAttribute="leading" constant="8" id="lQl-oc-hlA"/>
+                            <constraint firstAttribute="trailing" secondItem="PGf-nL-Wvr" secondAttribute="trailing" constant="8" id="qHS-Bz-llw"/>
+                            <constraint firstItem="UEQ-rB-BG3" firstAttribute="top" secondItem="PGf-nL-Wvr" secondAttribute="bottom" id="r2n-3m-8dn"/>
+                            <constraint firstAttribute="centerY" secondItem="PGf-nL-Wvr" secondAttribute="centerY" constant="10.25" id="ssh-kA-wGC"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iiA-XF-gsf" userLabel="lblData">
+                        <rect key="frame" x="8" y="-4" width="42" height="57.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="eEY-IL-tuH"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="29">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="28" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.12999999523162842"/>
+                                </attributes>
+                            </fragment>
+                            <fragment>
+                                <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.12999999523162842"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Quinta">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="HelveticaNeue-Light"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.12999999523162842"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AcJ-9q-dR5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="JGD-nH-Vlz"/>
+                    <constraint firstItem="iiA-XF-gsf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-12" id="gne-Hc-XEl"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="iiA-XF-gsf" secondAttribute="bottom" constant="-8" id="i30-be-naY"/>
+                    <constraint firstItem="AcJ-9q-dR5" firstAttribute="leading" secondItem="iiA-XF-gsf" secondAttribute="trailing" constant="27" id="qTC-MT-wWZ"/>
+                    <constraint firstItem="iiA-XF-gsf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="sF6-c1-FCP"/>
+                    <constraint firstAttribute="centerY" secondItem="AcJ-9q-dR5" secondAttribute="centerY" id="sf3-X3-6OZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblData" destination="iiA-XF-gsf" id="j8R-E1-qt6"/>
+                <outlet property="lblMateria" destination="PGf-nL-Wvr" id="zL6-QQ-rsS"/>
+                <outlet property="lblProva" destination="UEQ-rB-BG3" id="crF-da-K0K"/>
+                <outlet property="viewMain" destination="AcJ-9q-dR5" id="3rq-UL-wBr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

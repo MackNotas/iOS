@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="234" id="KGk-i7-Jjw" customClass="NotasTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="233.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igj-D7-80h" userLabel="separatorFaltas">
+                        <rect key="frame" x="5" y="166" width="307" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JUI-Op-xf5"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qh-Hl-Bhg" userLabel="viewFaltas">
+                        <rect key="frame" x="8" y="175" width="304" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Última falta:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5VD-k8-gBG" userLabel="lblUltimaFalta">
+                                <rect key="frame" x="0.0" y="29" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Faltas:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zK5-Bm-yXr" userLabel="lblFaltas">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="69 de 69 faltas permitidas (99.99%)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="nFQ-v1-mYd" userLabel="lblFaltaTexto">
+                                <rect key="frame" x="58" y="0.0" width="245" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01/01/1969" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSK-By-RQ2" userLabel="lblUltimaFaltaTexto">
+                                <rect key="frame" x="100" y="29" width="196" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nFQ-v1-mYd" firstAttribute="top" secondItem="4Qh-Hl-Bhg" secondAttribute="top" id="4Xx-Va-UsK"/>
+                            <constraint firstAttribute="height" constant="50" id="RJv-9A-uvd"/>
+                            <constraint firstAttribute="trailing" secondItem="nFQ-v1-mYd" secondAttribute="trailing" constant="0.5" id="WbQ-vS-78Z"/>
+                            <constraint firstAttribute="centerX" secondItem="nFQ-v1-mYd" secondAttribute="centerX" constant="-29" id="w3w-Ac-OQD"/>
+                        </constraints>
+                    </view>
+                    <collectionView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zhI-lB-sju" userLabel="collectionView">
+                        <rect key="frame" x="8" y="8" width="304" height="150"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="7u3-qM-cal"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8Z9-PF-czi">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="8" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="-1" id="mef-2M-nMr"/>
+                            <outlet property="delegate" destination="-1" id="hYi-1u-TL6"/>
+                        </connections>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não foi possível obter as faltas!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lcq-TY-w8R" userLabel="lblFaltaError">
+                        <rect key="frame" x="8" y="175" width="304" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="28a-17-eeT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4Qh-Hl-Bhg" firstAttribute="top" secondItem="Igj-D7-80h" secondAttribute="bottom" constant="8" id="0XL-8J-0bb"/>
+                    <constraint firstItem="4Qh-Hl-Bhg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="2ND-1d-CPS"/>
+                    <constraint firstItem="Igj-D7-80h" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="DMT-k3-s0Y"/>
+                    <constraint firstAttribute="trailing" secondItem="Lcq-TY-w8R" secondAttribute="trailing" constant="8" id="DPS-Tx-Im2"/>
+                    <constraint firstItem="Igj-D7-80h" firstAttribute="top" secondItem="zhI-lB-sju" secondAttribute="bottom" constant="8" id="HVW-rc-jbC"/>
+                    <constraint firstAttribute="trailing" secondItem="zhI-lB-sju" secondAttribute="trailing" constant="8" id="MC4-cI-Tm5"/>
+                    <constraint firstItem="zhI-lB-sju" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="c9j-wN-6pr"/>
+                    <constraint firstItem="zhI-lB-sju" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hSF-Jc-Aja"/>
+                    <constraint firstAttribute="trailing" secondItem="Igj-D7-80h" secondAttribute="trailing" constant="8" id="nXD-PA-shn"/>
+                    <constraint firstAttribute="trailing" secondItem="4Qh-Hl-Bhg" secondAttribute="trailing" constant="8" id="njg-M3-sEn"/>
+                    <constraint firstItem="Lcq-TY-w8R" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="nx4-sg-fuK"/>
+                    <constraint firstItem="Lcq-TY-w8R" firstAttribute="top" secondItem="Igj-D7-80h" secondAttribute="bottom" constant="8" id="xDA-XO-C1F"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="zhI-lB-sju" id="dS7-JI-B9P"/>
+                <outlet property="lblFaltaError" destination="Lcq-TY-w8R" id="Gzc-WS-aFz"/>
+                <outlet property="lblFaltaTexto" destination="nFQ-v1-mYd" id="E1g-tJ-WTG"/>
+                <outlet property="lblUltimaFaltaTexto" destination="LSK-By-RQ2" id="F2n-5a-35O"/>
+                <outlet property="separatorFaltas" destination="Igj-D7-80h" id="eEO-OD-gBW"/>
+                <outlet property="viewFaltas" destination="4Qh-Hl-Bhg" id="8Mw-6F-Iie"/>
+            </connections>
+            <point key="canvasLocation" x="304" y="207"/>
+        </tableViewCell>
+    </objects>
+</document>
