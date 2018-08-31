@@ -14,7 +14,7 @@ Projeto iOS do MackNotas
 # Install
 Abra o projeto através do `MackNotas.xcworkspace`
 
-#Requerimento mínimo:
+# Requerimento mínimo:
 - Xcode 7.x
 - iOS 7.x
 
